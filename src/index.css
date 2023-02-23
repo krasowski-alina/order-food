@@ -21,5 +21,8 @@ code {
   padding: 20px;
 }
 .foodImages {
-  width: 100px;
+  width: 500px;
+}
+.cartIcon {
+  width: 70px;
 }
