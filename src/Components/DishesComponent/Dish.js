@@ -1,7 +1,11 @@
 
-const Dish = () => {
+const Dish = ({dish}) => {
     return (
-        <div>TEST</div>
+        <div>
+            <h1>{dish.name}</h1>
+            <img src={`${dish.img}.jpg`} alt="dish" className="foodImages"/>
+            <h2>${dish.price}</h2>
+        </div>
     )
 }
 export default Dish;
