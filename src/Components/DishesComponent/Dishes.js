@@ -1,6 +1,5 @@
 import dataDishes from "../../data/dataDishes";
 import Dish from "./Dish";
-// const {id, price, img, name, category } = dish
 
 const Dishes = ()=> {
     return(
