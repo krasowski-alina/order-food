@@ -26,3 +26,14 @@ code {
 .cartIcon {
   width: 70px;
 }
+.categoryBtnSelected {
+  background-color: green;
+}
+.categoryBtn:hover {
+  background-color: #FCE22A;
+}
+.categoryBtnSelected, .categoryBtn {
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
