@@ -1,10 +1,18 @@
 import dataDishes from "../../data/dataDishes";
+import { filterCategory } from "../../redux/dishesSlice";
+import { useSelector } from "react-redux";
+import { getSelectedCategory } from "../../redux/dishesSlice"; 
 import Dish from "./Dish";
 
 const Dishes = ()=> {
+    const selectedCategory = useSelector(getSelectedCategory)
     return(
         <div>
-        {dataDishes.map((dish => {
+        {dataDishes
+        .filter(dish => {
+            return selectedCategory === dish.category
+        })
+        .map((dish => {
         return (
             <Dish dish={dish}
             key = {dish.id}/>
