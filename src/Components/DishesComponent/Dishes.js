@@ -10,6 +10,9 @@ const Dishes = ()=> {
         <div>
         {dataDishes
         .filter(dish => {
+            if( selectedCategory === "ALL"){
+                return dish
+            }
             return selectedCategory === dish.category
         })
         .map((dish => {
