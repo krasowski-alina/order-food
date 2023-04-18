@@ -1,5 +1,4 @@
 import dataDishes from "../../data/dataDishes";
-import { filterCategory } from "../../redux/dishesSlice";
 import { useSelector } from "react-redux";
 import { getSelectedCategory } from "../../redux/dishesSlice"; 
 import Dish from "./Dish";
